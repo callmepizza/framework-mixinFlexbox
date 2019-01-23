@@ -1,0 +1,111 @@
+//                              Frame-Work FlexBox Mixin by(Callmepizza)
+//Variables
+$auto : auto;
+$display-flex: flex !default;
+$webkit-display:-webkit-flex !default;
+
+//                                     MIXIN-FLEXBOX
+
+/*guide helps
+  All properties and values Flexbox.
+*/
+@mixin full-main-flex($flow,$justify-content,$align-items){
+  display:$display-flex;
+  display:$webkit-display;
+  -webkit-flex-flow:$flow;
+  flex-flow:$flow;
+  justify-content:$justify-content;
+  -webkit-justify-content:$justify-content;
+  align-items:$align-items;
+  -webkit-align-items:$align-items;
+}
+
+/* guide helps
+   properties and values : 
+   flex-flow and justify-content.
+*/
+
+@mixin flex-flow-and-justify($flow,$justify-content){
+  display:$display-flex;
+  display:$webkit-display;
+  -webkit-flex-flow:$flow;
+  flex-flow:$flow;
+  justify-content:$justify-content;
+  -webkit-justify-content:$justify-content;
+}
+
+/* guide helps
+  flex-flow : row nowrap;
+  flex-flow : row wrap; 
+  flex-flow : column;
+  flex-flow : row-revers;
+  flex-flow : column-revers;
+*/
+@mixin main-flex-flow($flow){
+  display:$display-flex;
+  display:$webkit-display;
+  -webkit-flex-flow:$flow;
+  flex-flow:$flow;
+}
+/* guide helps
+   justify-content:space-between;
+   justify-content:flex-start;
+   justify-content:flex-end;
+   justify-content:center;
+   justify-content:space-around;  
+*/
+@mixin justify-content($justify-content){
+  justify-content:$justify-content;
+  -webkit-justify-content:$justify-content;
+}
+
+// Flex auto
+@mixin flex-auto { 
+  flex:$auto;
+  -webkit-flex:$auto;
+  -ms-flex:$auto;
+ }
+
+/* guide helps
+     align-items:flex-start;
+     align-items:flex-end;
+     align-items:baseline;
+     align-items:stretch;
+     align-items:center;
+*/
+
+@mixin flex-align-items ($align-items){
+  align-items:$align-items;
+  -webkit-align-items:$align-items;
+}
+
+/*guide helps
+    align-content:flex-start;
+    align-content:flex-end;
+    align-content:space-between;
+    align-content:center;
+    align-content:space-around;
+    align-content:stretch;
+*/
+@mixin flex-align-content($align-content){
+  align-content:$align-content;
+  -webkit-align-content:$align-content;
+}
+/*guide helps
+    flex-grow : 1;
+    flex-grow : 2;
+    flex-grow : 3;
+    flex-grow : 4;
+*/
+@mixin flex-flex-grow($flexgrow){
+  flex-grow:$flexgrow;
+  -webkit-flex-grow:$flexgrow;
+}
+/*guide helps
+   properties and values :
+   width and max-width.
+*/
+@mixin width-max-width($width,$max-width){
+  width:$width;
+  max-width:$max-width;
+}
